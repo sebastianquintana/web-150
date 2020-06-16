@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Let's play the sum game.</p>
+
+<button onclick="myFunction()">Click here</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var person = prompt("Enter your name");
+  var first_number = prompt("Enter the first number");
+  var second_number = prompt("Enter the second number");
+  var total = parseInt(first_number) + parseInt(second_number);
+  if (person != null) {
+    document.getElementById("demo").innerHTML =
+    ("Hi " + person + "&nbsp; the sum of &nbsp;"+ first_number + "+" + second_number + "&nbsp; is :"+ total);
+  }
+}
+</script>
+
+</body>
+</html>
