@@ -16,3 +16,16 @@ $( function() {
 $( function() {
   $( "#datepicker" ).datepicker();
 } );
+
+//add autofilling
+$( function() {
+  var availableTags = [
+    "@hotmail.com",
+    "@gmail.com",
+    "@outlook.com",
+    "@tomdouglas.com"
+  ];
+  $( "#tags" ).autocomplete({
+    source: availableTags
+  });
+} );
